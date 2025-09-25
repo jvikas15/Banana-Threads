@@ -56,11 +56,12 @@
   .navicons {
     display: none;
   }
+  /* .TagName{display: flex;justify-content: center;align-items: center;} */
 
   /* Remove search bar */
-  .searchbar {
+  /* .searchbar {
     display: none;
-  }
+  } */
 
   /* Stack product vertically */
   .Product {
