@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bitcount font  -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- for poppins font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Latest Font Awesome (Free) via CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- css by me  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <!-- Header  -->
+    <header>
+      <div class="header1">
+        <div class="logo"><img src="Images/logo.png" alt="" /></div>
+        <div class="TagName">
+          <span class="TagBanana">Banana</span>
+          <span class="TagThread">Thread</span>
+        </div>
+        <div class="navicons">
+          <i class="fa-solid fa-heart"></i>
+          <span class="wishbadge">0</span>
+        </div>
+        <div class="navicons">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="bagbadge">0</span>
+        </div>
+      </div>
+      <div class="header2">
+        <input type="text" class="searchbar" placeholder="search here...." />
+
+        <ul class="listItems">
+          <li>Home</li>
+          <li>Catalog</li>
+          <li>Contact</li>
+          <li><i class="fa-solid fa-user"></i></li>
+          <li><i class="fa-solid fa-shirt"></i></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="Product">
+      <div class="pleft"><img src="Images/image1.webp" alt="" /></div>
+      <div class="pright">
+        <h6>My Store</h6>
+        <h1>BANANA BLISS</h1>
+        <h1>OVERSIZED T-SHIRT</h1>
+        <span class="sizechart"><h4 style="font-family: Bitcount Prop Single Ink;">Size Chart</h4></span>
+        <h4 style="color:rgb(181, 32, 218);">₹3333</h4>
+        <div class="sizes">
+          <h6>Size</h6>
+          <button class="sizebutton">S</button
+          ><button class="sizebutton">M</button
+          ><button class="sizebutton">L</button
+          ><button class="sizebutton">XL</button
+          ><button class="sizebutton">XXL</button>
+        </div>
+        <h5>Quantity</h5>
+        <div class="qunatitybuttons"><button class="add">+</button>
+        <SPAn>01</SPAn>
+        <button class="minus">-</button></div>
+        <button class="addtocart">Add to Cart</button>
+        <button class="buynow">Buy Now</button>
+        
+      </div>
+    </div>
+
+    <!-- Size Chart Popup -->
+<div class="popupOverlay" id="popupOverlay">
+  <div class="popupContent">
+    <img src="Images/sizechart.png" alt="Size Chart" />
+  </div>
+</div>
+
+
+    <!-- bannerArea  -->
+    <section class="bannerArea">
+      <div class="bannerContainer">
+    <img src="Images/image2.avif" alt="Product 2" />
+    <img src="Images/image3.avif" alt="Product 3" />
+    <img src="Images/image4.avif" alt="Product 4" />
+    <img src="Images/image5.avif" alt="Product 5" />
+    <img src="Images/image6.avif" alt="Product 6" />
+    <img src="Images/image7.avif" alt="Product 7" />
+    <img src="Images/image8.avif" alt="Product 8" />
+    <img src="Images/image9.avif" alt="Product 9" />
+      </div>
+    </section>
+
+    
+    <footer>
+    <ul>
+        <p class="copyright"> &copy; All Rights Reserved | Vikas Jakhar 🍌</p>
+    </ul>
+  </footer>
+
+    <script>
+
+                let sizechart = document.querySelector(".sizechart");
+let popupOverlay = document.getElementById("popupOverlay");
+
+sizechart.addEventListener("click", function() {
+  popupOverlay.style.display = "flex";
+});
+
+// close popup when clicking anywhere on overlay
+popupOverlay.addEventListener("click", function() {
+  popupOverlay.style.display = "none";
+});
+
+    
+    </script>
+  </body>
+</html>
